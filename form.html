@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+            rel="stylesheet" href=
+            "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <script src=
+                    "https://use.fontawesome.com/releases/v5.15.4/js/all.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Регистрация</title>
+</head>
+<body>
+<div class="container box p-6
+				has-background-light">
+    <h2 class="subtitle">
+        Это регистрация на сайте по продаже автозапчастей
+    </h2>
+    <h2 class="subtitle">
+        Вы регистрируетесь как?
+    </h2>
+    <form action="" id="signup">
+
+        <div class="field">
+            <div class="control">
+                <label class="radio">
+                    <input type="radio"
+                           name="question" value="buyer" required id="buyer"/>
+                    Покупатель
+                </label>
+                <label class="radio">
+                    <input type="radio"
+                           name="question" value="seller" id="seller"/>
+                    Продавец
+                </label>
+            </div>
+        </div>
+
+
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label" style="font-weight: normal;">Эл.почта</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <input class="input is-normal" type="text"  style="width: 400px;"
+                           placeholder="" required/>
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Название организации</label>
+        </div>
+
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label" style="font-weight: normal;">ИП или Юр.лицо</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <input class="input" type="text" style="width: 400px;"
+                           placeholder="" required/>
+                </div>
+            </div>
+        </div>
+
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label" style="font-weight: normal;">ИНН</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <input class="input" type="text" style="width: 400px;"
+                           placeholder="" required/>
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Фактический адрес</label>
+        </div>
+
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label" style="font-weight: normal;">Ваш город</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <input class="input" type="text" style="width: 400px;"
+                           placeholder="" required/>
+                </div>
+            </div>
+        </div>
+
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label" style="font-weight: normal;">Улица</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <input class="input" type="text" style="width: 400px;"
+                           placeholder="" required/>
+                </div>
+            </div>
+        </div>
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label" style="font-weight: normal;">Дом/стр.</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <input class="input" type="text" style="width: 400px;"
+                           placeholder="" required/>
+                </div>
+            </div>
+        </div>
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label" style="font-weight: normal;">Офис</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <input class="input" type="text" style="width: 400px;"
+                           placeholder="" required/>
+                </div>
+            </div>
+        </div>
+
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label" style="font-weight: normal;">Телефон</label>
+            </div>
+            <div class="field-body has-addons">
+                <p class="control">
+                    <a class="button is-static">
+                        +7
+                    </a>
+                </p>
+                <p class="control">
+                    <input class="input" type="text" placeholder="" required>
+                </p>
+            </div>
+        </div>
+        <div class="field is-horizontal" id="div_name_site">
+            <div class="field-label is-normal">
+                <label class="label" style="font-weight: normal;">Сайт вашей компании</label>
+            </div>
+            <div class="field-body">
+                <div class="field" id="div_field_site">
+                    <input class="input" type="text" style="width: 400px;"
+                           placeholder=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Виды деятельности</label>
+        </div>
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label" style="font-weight: normal;">Магазин</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                <label class="checkbox">
+                    <input type="checkbox">
+                </label>
+            </div>
+        </div>
+        </div>
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label" style="font-weight: normal;">Региональная сеть магазинов</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                <label class="checkbox">
+                    <input type="checkbox">
+                </label>
+            </div>
+        </div>
+        </div>
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label" style="font-weight: normal;">Федеральная сеть магазинов</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                <label class="checkbox">
+                    <input type="checkbox">
+                </label>
+            </div>
+        </div>
+        </div>
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label" style="font-weight: normal;">Интернет-магазин</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                <label class="checkbox">
+                    <input type="checkbox">
+                </label>
+            </div>
+        </div>
+        </div>
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label" style="font-weight: normal;">Автосервис</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                <label class="checkbox">
+                    <input type="checkbox">
+                </label>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label" style="font-weight: normal;">Прочее</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <input class="input" type="text"style="width: 400px;"
+                           placeholder=""/>
+                </div>
+            </div>
+        </div>
+        <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-success" type="submit">
+                    Отправить заявку
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+<script>
+$(document).ready(function () {
+
+    $('input[type="radio"]').click(function () {
+        if ($(this).attr("value") == "buyer") {
+            $("#div_name_site").hide('slow');
+            $("#div_field_site").hide('slow');
+        }
+        if ($(this).attr("value") == "seller") {
+            $("#div_name_site").show('slow');
+            $("#div_field_site").show('slow');
+
+        }
+    });
+
+    $('input[type="radio"]').trigger('click');  // trigger the event
+});
+    const form = document.getElementById('signup');
+    form.addEventListener('submit', (event) => {
+        {
+            event.preventDefault();
+            Swal.fire("Успешно", "Регистрация завершена", "success");
+        }
+    });
+</script>
+</body>
+</html>
